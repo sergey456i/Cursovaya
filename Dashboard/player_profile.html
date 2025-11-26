@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dota 2 Dashboard - Профиль игрока</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+  <!-- Боковое меню -->
+  <div id="sidebar">
+    <a href="index.html"> <img src="img/logo.svg" width="50" height="50" alt="Логотип"/></a>
+    <h4 class="sidebar-title">Dota 2 Dashboard</h4>
+    <ul class="nav">
+      <li class="nav-item ">
+        <a href="index.html" data-icon="&#127968;">
+          Главная
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="match_analysis.html" data-icon="&#128202;">
+          Анализ матча
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a href="player_profile.html" data-icon="&#128522;">
+          Профиль игрока
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="heroes_analysis.html" data-icon="&#127917;">
+          Герои
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="esports.html" data-icon="&#127942;">
+          Киберспорт
+        </a>
+      </li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <small>© 2025 Dota Dashboard</small>
+    </div>
+  </div>
+
+  <!-- Основной контент -->
+  <div id="main-content">
+    <div class="header">
+      <div>
+        <a href="register.html">Регистрация</a>
+        <a href="login.html">Вход</a>
+        <a href="#"><img src="img/user_icon_149329.svg" width="40" height="40" alt="Профиль"/></a>
+      </div>
+      <div>
+        <h2>Профиль игрока</h2>
+        <a href="." class="reload">Обновить</a>
+      </div>
+    </div>
+
+    <!-- Информация об игроке -->
+    <div class="card-section">
+      <div class="card-body">
+        <div class="player-info">
+          <div class="player-avatar">
+            <img src="img/icons8-dota-2-50.png" alt="Avatar" class="avatar-img">
+            <h5 class="player-name">PlayerName</h5>
+          </div>
+          <div class="player-stats">
+            <div class="stat-item">
+              <h6>Ранг</h6>
+              <h4>Immortal</h4>
+            </div>
+            <div class="stat-item">
+              <h6>MMR</h6>
+              <h4>4120</h4>
+            </div>
+            <div class="stat-item">
+              <h6>Матчи</h6>
+              <h4>127</h4>
+            </div>
+            <div class="stat-item">
+              <h6>Win Rate</h6>
+              <h4>58%</h4>
+            </div>
+            <div class="stat-item">
+              <h6>Средний GPM</h6>
+              <h4>420</h4>
+            </div>
+            <div class="stat-item">
+              <h6>Средний XPM</h6>
+              <h4>380</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Вкладки -->
+    <div class="tabs">
+      <div class="tab-header">
+        <button class="tab-btn active" data-tab="general">Общее</button>
+        <button class="tab-btn" data-tab="heroes">Герои</button>
+        <button class="tab-btn" data-tab="roles">Роли</button>
+        <button class="tab-btn" data-tab="progress">Прогресс</button>
+      </div>
+
+      <!-- Вкладка "Общее" -->
+      <div class="tab-content active" id="general">
+        <div class="card-section">
+          <div class="card-header">
+            <h5>Основные показатели</h5>
+          </div>
+          <div class="card-body">
+            <ul class="stats-list">
+              <li class="stat-entry">
+                <span>Средний KDA</span>
+                <span>6.2 / 4.1 / 8.7</span>
+              </li>
+              <li class="stat-entry">
+                <span>Средние убийства</span>
+                <span>6.2</span>
+              </li>
+              <li class="stat-entry">
+                <span>Средние смерти</span>
+                <span>4.1</span>
+              </li>
+              <li class="stat-entry">
+                <span>Средние ассисты</span>
+                <span>8.7</span>
+              </li>
+              <li class="stat-entry">
+                <span>Средний CS (за 10 мин)</span>
+                <span>178</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-section">
+          <div class="card-header">
+            <h5>График Win Rate</h5>
+          </div>
+          <div class="card-body-placeholder">
+            <div class="chart-placeholder">📈</div>
+            <p>Здесь будет график win rate по неделям</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Вкладка "Герои" -->
+      <div class="tab-content" id="heroes" style="display: none;">
+        <div class="card-section">
+          <div class="card-header">
+            <h5>Статистика по героям</h5>
+          </div>
+          <div class="table-container">
+            <table class="match-table">
+              <thead>
+              <tr>
+                <th>Герой</th>
+                <th>Играл</th>
+                <th>Win Rate</th>
+                <th>Средний GPM</th>
+                <th>Любимая роль</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td><img src="img/invoker.png" width="256" alt="Invoker"> Invoker</td>
+                <td>27</td>
+                <td>63%</td>
+                <td>480</td>
+                <td>Mid</td>
+              </tr>
+              <tr>
+                <td><img src="img/pudge.png" width="256" alt="Pudge"> Pudge</td>
+                <td>18</td>
+                <td>50%</td>
+                <td>280</td>
+                <td>Support</td>
+              </tr>
+              <tr>
+                <td><img src="img/axe.png" width="256"  alt="Axe"> Axe</td>
+                <td>15</td>
+                <td>53%</td>
+                <td>380</td>
+                <td>Offlane</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Вкладка "Роли" -->
+      <div class="tab-content" id="roles" style="display: none;">
+        <div class="card-section">
+          <div class="card-header">
+            <h5>Статистика по ролям</h5>
+          </div>
+          <div class="card-body">
+            <div class="roles-container">
+              <ul class="stats-list">
+                <li class="stat-entry">
+                  <span>Carry (1)</span>
+                  <span class="badge">32%</span>
+                </li>
+                <li class="stat-entry">
+                  <span>Mid (2)</span>
+                  <span class="badge">40%</span>
+                </li>
+                <li class="stat-entry">
+                  <span>Offlane (3)</span>
+                  <span class="badge">18%</span>
+                </li>
+                <li class="stat-entry">
+                  <span>Support (4)</span>
+                  <span class="badge">7%</span>
+                </li>
+                <li class="stat-entry">
+                  <span>Hard Support (5)</span>
+                  <span class="badge">3%</span>
+                </li>
+              </ul>
+              <div class="chart-placeholder-card">
+                <div class="chart-placeholder">🥧</div>
+                <p class="chart-label">Диаграмма распределения по ролям</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Вкладка "Прогресс" -->
+      <div class="tab-content" id="progress" style="display: none;">
+        <div class="card-section">
+          <div class="card-header">
+            <h5>Изменение MMR и ранга</h5>
+          </div>
+          <div class="card-body">
+            <div class="chart-placeholder-card">
+              <div class="chart-placeholder">📉</div>
+              <p class="chart-label">График MMR за последние 3 месяца</p>
+            </div>
+            <div class="progress-bar-container">
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 87%"></div>
+              </div>
+              <span class="progress-text">До следующего Immortal (87%)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Переключение вкладок
+  document.querySelectorAll('.tab-btn').forEach(button => {
+    button.addEventListener('click', function() {
+      const tabId = this.getAttribute('data-tab');
+
+      // Сброс активных классов
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(content => content.style.display = 'none');
+
+      // Активация выбранной вкладки
+      this.classList.add('active');
+      document.getElementById(tabId).style.display = 'block';
+    });
+  });
+</script>
+</body>
+</html>

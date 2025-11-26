@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dota 2 Dashboard - Киберспорт</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+  <!-- Боковое меню -->
+  <div id="sidebar">
+    <a href="index.html"> <img src="img/logo.svg" width="50" height="50" alt="Логотип"/></a>
+    <h4 class="sidebar-title">Dota 2 Dashboard</h4>
+    <ul class="nav">
+      <li class="nav-item ">
+        <a href="index.html" data-icon="&#127968;">
+          Главная
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="match_analysis.html" data-icon="&#128202;">
+          Анализ матча
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="player_profile.html" data-icon="&#128522;">
+          Профиль игрока
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="heroes_analysis.html" data-icon="&#127917;">
+          Герои
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a href="esports.html" data-icon="&#127942;">
+          Киберспорт
+        </a>
+      </li>
+    </ul>
+
+    <div class="sidebar-footer">
+      <small>© 2025 Dota Dashboard</small>
+    </div>
+  </div>
+
+  <!-- Основной контент -->
+  <div id="main-content">
+    <div class="header">
+      <div>
+        <a href="register.html">Регистрация</a>
+        <a href="login.html">Вход</a>
+        <a href="#"><img src="img/user_icon_149329.svg" width="40" height="40" alt="Профиль"/></a>
+      </div>
+      <div>
+        <h2>Киберспорт</h2>
+        <a href="." class="reload">Обновить</a>
+      </div>
+    </div>
+
+    <!-- Текущие турниры -->
+    <div class="card-section">
+      <div class="card-header">
+        <h5>Текущие турниры</h5>
+      </div>
+      <div class="card-body">
+        <div class="tournaments-grid">
+          <div class="tournament-card">
+            <h5>The International 2025</h5>
+            <p class="text-muted">Призовой фонд: $20,000,000</p>
+            <p class="text-muted">Дата: 15 - 25 Октября</p>
+            <div class="d-flex justify-content-between">
+              <span>Участники: 18</span>
+              <span class="badge bg-warning">Идет</span>
+            </div>
+          </div>
+          <div class="tournament-card">
+            <h5>ESL One Kuala Lumpur 2025</h5>
+            <p class="text-muted">Призовой фонд: $500,000</p>
+            <p class="text-muted">Дата: 10 - 18 Ноября</p>
+            <div class="d-flex justify-content-between">
+              <span>Участники: 8</span>
+              <span class="badge bg-warning">Идет</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Мета-анализ -->
+    <div class="card-section">
+      <div class="card-header">
+        <h5>Мета-анализ (после патча 7.36)</h5>
+      </div>
+      <div class="card-body">
+        <div class="meta-analysis-container">
+          <div class="top-heroes">
+            <h6>Топ-5 героев в турнирах</h6>
+            <ul class="stats-list">
+              <li class="stat-entry">
+                <span><img src="img/invoker.png" width="24" alt="Invoker"> Invoker</span>
+                <span class="win">56.2%</span>
+              </li>
+              <li class="stat-entry">
+                <span><img src="img/pudge.png" width="24" alt="Pudge"> Pudge</span>
+                <span class="lose">48.3%</span>
+              </li>
+              <li class="stat-entry">
+                <span><img src="img/axe.png" width="24" alt="Axe"> Axe</span>
+                <span class="win">53.8%</span>
+              </li>
+              <li class="stat-entry">
+                <span><img src="img/phantom_assasin.png" width="24" alt="PA"> PA</span>
+                <span class="win">54.1%</span>
+              </li>
+              <li class="stat-entry">
+                <span><img src="img/techies.png" width="24" height="15"  alt="Techies"> Techies</span>
+                <span class="lose">42.7%</span>
+              </li>
+            </ul>
+          </div>
+          <div class="chart-placeholder-card">
+            <div class="chart-placeholder">📊</div>
+            <p class="chart-label">Win rate героев в турнирах</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Командная статистика -->
+    <div class="card-section">
+      <div class="card-header">
+        <h5>Командная статистика</h5>
+      </div>
+      <div class="table-container">
+        <table class="match-table">
+          <thead>
+          <tr>
+            <th>Команда</th>
+            <th>Логотип</th>
+            <th>Win Rate</th>
+            <th>Средний KDA</th>
+            <th>Средний GPM</th>
+            <th>Последний турнир</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Team Spirit</td>
+            <td><img src="img/scale_1200.jpeg" width="50" alt="TS"></td>
+            <td class="win">78%</td>
+            <td>3.2 / 1.8 / 12.1</td>
+            <td>420</td>
+            <td>TI2025 (1/8)</td>
+          </tr>
+          <tr>
+            <td>Gaimin Gladiators</td>
+            <td><img src="img/gg.png" width="50" alt="GG"></td>
+            <td class="win">72%</td>
+            <td>2.8 / 2.1 / 10.5</td>
+            <td>405</td>
+            <td>ESL KL (3/8)</td>
+          </tr>
+          <tr>
+            <td>LGD Gaming</td>
+            <td><img src="img/lgd.jpeg" width="50" alt="LGD"></td>
+            <td class="win">68%</td>
+            <td>2.5 / 2.3 / 9.8</td>
+            <td>395</td>
+            <td>TI2025 (2/8)</td>
+          </tr>
+          <tr>
+            <td>Team Liquid</td>
+            <td><img src="img/5b03c677608047.5cdf337d1ed63.png" width="50" height="25" alt="TL"></td>
+            <td class="text-warning">58%</td>
+            <td>2.1 / 2.7 / 8.7</td>
+            <td>380</td>
+            <td>ESL KL (5/8)</td>
+          </tr>
+          <tr>
+            <td>Tundra Esports</td>
+            <td><img src="img/tundra.png" width="50" height="25" alt="TE"></td>
+            <td class="lose">45%</td>
+            <td>1.8 / 3.0 / 7.2</td>
+            <td>360</td>
+            <td>TI2025 (4/8)</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Новости и патчи -->
+    <div class="card-section">
+      <div class="card-header">
+        <h5>Новости и обновления</h5>
+      </div>
+      <div class="card-body">
+        <div class="news-list">
+          <a href="#" class="news-item">
+            <div class="d-flex w-100 justify-content-between">
+              <h6 class="mb-1">Вышел патч 7.36c</h6>
+              <small class="text-muted">2 дня назад</small>
+            </div>
+            <p class="mb-1">Изменения в балансе Invoker и Pudge, а также фиксы багов.</p>
+          </a>
+          <a href="#" class="news-item">
+            <div class="d-flex w-100 justify-content-between">
+              <h6 class="mb-1">Team Spirit выигрывает ESL One KL</h6>
+              <small class="text-muted">5 дней назад</small>
+            </div>
+            <p class="mb-1">Победа со счетом 3:1 над Gaimin Gladiators в финале.</p>
+          </a>
+          <a href="#" class="news-item">
+            <div class="d-flex w-100 justify-content-between">
+              <h6 class="mb-1">Прогноз на TI2025: Кто выиграет?</h6>
+              <small class="text-muted">1 неделя назад</small>
+            </div>
+            <p class="mb-1">Аналитики считают, что Team Spirit и LGD Gaming — главные фавориты.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
