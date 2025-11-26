@@ -143,17 +143,18 @@ body {
 }
 
 .cards-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
-
 .card {
     padding: 1rem;
     border-radius: 0.5rem;
     text-align: center;
     color: white;
+    width: 15%;
 }
 
 .card h5 {
