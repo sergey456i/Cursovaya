@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Обратная связь - Dota 2 Dashboard</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<div class="container">
+    <!-- Боковое меню -->
+    <div id="sidebar">
+        <h4 class="sidebar-title">Dota 2 Dashboard</h4>
+        <ul class="nav">
+            <li class="nav-item">
+                <a href="index.html" data-icon="&#127968;">
+                    Главная
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="match_analysis.html" data-icon="&#128202;">
+                    Анализ матча
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="player_profile.html" data-icon="&#128522;">
+                    Профиль игрока
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="heroes_analysis.html" data-icon="&#127917;">
+                    Герои
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="esports.html" data-icon="&#127942;">
+                    Киберспорт
+                </a>
+            </li>
+        </ul>
+        <a href="help.html" class="help">Помощь</a>
+        <div class="sidebar-footer">
+            <small>© 2025 Dota Dashboard</small>
+        </div>
+    </div>
+
+    <!-- Основной контент -->
+    <div id="main-content">
+        <div class="header">
+            <h2>Обратная связь</h2>
+        </div>
+
+        <div class="card-section">
+            <div class="card-header">
+                <h5>Связаться с нами</h5>
+            </div>
+            <div class="card-body">
+                <form class="feedback-form">
+                    <div class="input-group">
+                        <label for="feedback-name">Ваше имя</label>
+                        <input type="text" id="feedback-name" name="name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="feedback-email">Email</label>
+                        <input type="email" id="feedback-email" name="email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="feedback-subject">Тема</label>
+                        <input type="text" id="feedback-subject" name="subject" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="feedback-message">Сообщение</label>
+                        <textarea id="feedback-message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

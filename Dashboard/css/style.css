@@ -1,4 +1,8 @@
-/* Общие стили */
+
+html {
+    font-size: 1.25rem; /* 20px */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,24 +26,24 @@ body {
     min-height: 100vh;
 }
 
-/* Стили бокового меню */
 #sidebar {
-    width: 250px;
+    width: 13rem;
     background-color: #1e1e1e;
-    padding: 20px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
-    border-right: 1px solid #343a40;
+
 }
+
 #sidebar a {
     display: flex;
     align-self: center;
-    padding-bottom: 10px;
+    padding-bottom: 0.5rem;
 }
 
 .sidebar-title {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
     color: #f5f5f5;
 }
 
@@ -49,28 +53,38 @@ body {
 }
 
 .nav-item {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .nav-item a {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0.5rem;
     color: #f5f5f5;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0.25rem;
     transition: background-color 0.2s;
     position: relative;
 }
 
 .nav-item a::before {
     content: attr(data-icon);
-    margin-right: 10px;
-    font-size: 1.2em;
+    margin-right: 0.5rem;
+    font-size: 12pt;
 }
 
 .nav-item a:hover,
 .nav-item.active a {
+    background-color: #343a40;
+}
+
+.help {
+    transition: 0.2s;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.help:hover {
     background-color: #343a40;
 }
 
@@ -80,125 +94,122 @@ body {
     color: #aaa;
 }
 
-/* Основной контент */
 #main-content {
     flex-grow: 1;
-    padding: 20px;
+    padding: 1rem;
     background-color: #1e1e1e;
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
-    gap: 20px;
+    margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 .header div:first-child {
     display: flex;
     align-self: flex-end;
-    gap: 20px;
+    gap: 1rem;
     align-items: center;
 }
-.header div:first-child a:nth-child(1), a:nth-child(2){
-    padding: 10px;
-    transition: 0.2s;
-    border-radius: 5px;
-}
-.header div:first-child a:nth-child(1):hover, a:nth-child(2):hover {
-    background-color:#343a40;
-}
 
-.header div:last-child{
+.header div:last-child {
     display: flex;
     justify-content: space-between;
 }
-
-.header h2 {
-    font-size: 1.8rem;
+.header a{
+    transition: 0.2s;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
+.header a:hover{
+    background-color:#343a40 ;
+}
+
 
 .reload {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
+    padding: 0.4rem 1rem;
+    border-radius: 0.25rem;
     cursor: pointer;
-    font-size: 0.9rem;
     text-decoration: none;
 }
 
 .reload:hover {
     background-color: #0056b3;
 }
-/* Карточки KPI (для первой страницы) */
+
 .cards-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 20px;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .card {
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1rem;
+    border-radius: 0.5rem;
     text-align: center;
     color: white;
 }
 
 .card h5 {
-    font-size: 0.9rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
-.card h3 {
-    font-size: 1.8rem;
+
+.card-matches {
+    background-color: #6c757d;
 }
 
-.card-matches { background-color: #6c757d; }
-.card-winrate { background-color: #28a745; }
-.card-mmr { background-color: #17a2b8; }
-.card-gpm { background-color: #ffc107; color: black; }
-.card-hero { background-color: #007bff; }
-.card-rank { background-color: #dc3545; }
+.card-winrate {
+    background-color: #28a745;
+}
 
-/* Секции с карточками */
+.card-mmr {
+    background-color: #17a2b8;
+}
+
+.card-gpm {
+    background-color: #ffc107;
+    color: black;
+}
+
+.card-hero {
+    background-color: #007bff;
+}
+
+.card-rank {
+    background-color: #dc3545;
+}
+
 .card-section {
     background-color: #2a2a2a;
-    border-radius: 10px;
-    margin-bottom: 30px;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.1);
 }
 
 .card-header {
-    padding: 15px 20px;
+    padding: 0.75rem 1rem;
     background-color: #343a40;
-    border-bottom: 1px solid #343a40;
 }
 
-.card-header h5 {
-    margin: 0;
-    font-size: 1.1rem;
-}
 
 .card-body {
-    padding: 20px;
+    padding: 1rem;
 }
 
 .card-body-placeholder {
-    padding: 40px;
+    padding: 2rem;
     text-align: center;
     color: #aaa;
 }
 
-.chart-placeholder {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
-
-/* Таблица матчей */
 .table-container {
     overflow-x: auto;
 }
@@ -210,9 +221,9 @@ body {
 
 .match-table th,
 .match-table td {
-    padding: 12px;
+    padding: 0.6rem;
     text-align: left;
-    border-bottom: 1px solid #343a40;
+
 }
 
 .match-table th {
@@ -229,7 +240,7 @@ body {
 }
 
 .match-table img {
-    margin-right: 8px;
+    margin-right: 0.4rem;
     vertical-align: middle;
 }
 
@@ -243,15 +254,6 @@ body {
     font-weight: bold;
 }
 
-.text-warning {
-    color: #ffc107;
-}
-
-.text-muted {
-    color: #aaa;
-}
-
-/* Фильтры */
 .filters {
     display: flex;
     flex-direction: column;
@@ -260,29 +262,28 @@ body {
 .form-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 0.75rem;
 }
 
 .form-field {
     flex: 1;
-    min-width: 200px;
+    min-width: 10rem;
 }
 
 .form-field label {
     display: block;
-    margin-bottom: 5px;
-    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+    font-size: 9pt;
     color: #aaa;
 }
 
 .form-control {
     width: 100%;
-    padding: 8px 12px;
+    padding: 0.4rem 0.6rem;
     background-color: #343a40;
     color: #f5f5f5;
-    border: 1px solid #444;
-    border-radius: 5px;
-    font-size: 0.9rem;
+    border-radius: 0.25rem;
+    font-size: 9pt;
 }
 
 .form-control:focus {
@@ -291,12 +292,11 @@ body {
 }
 
 .form-actions {
-    margin-top: 15px;
+    margin-top: 0.75rem;
     display: flex;
-    gap: 10px;
+    gap: 0.5rem;
 }
 
-/* Кликабельные строки таблицы */
 .clickable-row {
     cursor: pointer;
 }
@@ -305,11 +305,10 @@ body {
     background-color: #343a40;
 }
 
-/* Детали матча */
 .teams-container {
     display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .team {
@@ -317,7 +316,7 @@ body {
 }
 
 .team h6 {
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
     color: #aaa;
 }
 
@@ -326,36 +325,35 @@ body {
 }
 
 .team-list li {
-    padding: 8px;
+    padding: 0.4rem;
     background-color: #343a40;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
 }
 
 .divider {
     border: none;
-    height: 1px;
     background-color: #343a40;
-    margin: 20px 0;
+    margin: 1rem 0;
 }
 
 .charts-container {
     display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }
 
 .chart-placeholder-card {
     flex: 1;
     background-color: #343a40;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 1rem;
+    border-radius: 0.5rem;
     text-align: center;
 }
 
 .chart-label {
     color: #aaa;
-    margin-top: 10px;
+    margin-top: 0.5rem;
 }
 
 .events-list {
@@ -364,17 +362,16 @@ body {
 }
 
 .events-list li {
-    padding: 8px;
+    padding: 0.4rem;
     background-color: #343a40;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
 }
 
-/* Профиль игрока */
 .player-info {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 1.5rem;
 }
 
 .player-avatar {
@@ -382,21 +379,21 @@ body {
 }
 
 .avatar-img {
-    width: 80px;
-    height: 80px;
+    width: 4rem;
+    height: 4rem;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .player-name {
-    font-size: 1.2rem;
+    font-size: 9pt;
     margin: 0;
 }
 
 .player-stats {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
+    gap: 0.75rem;
     flex: 1;
 }
 
@@ -405,44 +402,40 @@ body {
 }
 
 .stat-item h6 {
-    font-size: 0.9rem;
     color: #aaa;
-    margin-bottom: 5px;
+    margin-bottom: 0.25rem;
 }
 
 .stat-item h4 {
-    font-size: 1.5rem;
     margin: 0;
 }
 
-/* Вкладки */
 .tabs {
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .tab-header {
     display: flex;
-    border-bottom: 1px solid #343a40;
 }
 
 .tab-btn {
     background: none;
     border: none;
-    padding: 10px 20px;
+    padding: 0.5rem 1rem;
     color: #aaa;
     cursor: pointer;
-    font-size: 1rem;
-    border-bottom: 2px solid transparent;
+    font-size: 15pt;
+    border-bottom: 1.5pt solid transparent;
 }
 
 .tab-btn:hover,
 .tab-btn.active {
     color: #f5f5f5;
-    border-bottom: 2px solid #007bff;
+    border-bottom: 1.5pt solid #007bff;
 }
 
 .tab-content {
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .stats-list {
@@ -453,23 +446,23 @@ body {
 .stat-entry {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 0.5rem;
     background-color: #343a40;
-    margin-bottom: 5px;
-    border-radius: 5px;
+    margin-bottom: 0.25rem;
+    border-radius: 0.25rem;
 }
 
 .badge {
     background-color: #007bff;
     color: white;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: 0.8rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.6rem;
+    font-size: 8pt;
 }
 
 .roles-container {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .roles-container > ul {
@@ -477,14 +470,14 @@ body {
 }
 
 .progress-bar-container {
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .progress-bar {
     width: 100%;
-    height: 20px;
+    height: 1rem;
     background-color: #343a40;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     overflow: hidden;
 }
 
@@ -496,35 +489,34 @@ body {
 
 .progress-text {
     display: block;
-    margin-top: 5px;
+    margin-top: 0.25rem;
     color: #aaa;
-    font-size: 0.9rem;
+    font-size: 6.75pt;
 }
 
-/* Анализ героев */
 .compare-heroes {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 .compare-checkbox {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 0.25rem;
     cursor: pointer;
 }
 
 .compare-checkbox input {
-    margin-right: 5px;
+    margin-right: 0.25rem;
 }
 
 .charts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 20px;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .hero-of-week {
@@ -535,30 +527,29 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    margin-bottom: 10px;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
 .hero-of-week .lead {
     margin: 0;
 }
 
-/* Киберспорт */
 .tournaments-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1rem;
 }
 
 .tournament-card {
     background-color: #343a40;
-    padding: 15px;
-    border-radius: 10px;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
 }
 
 .tournament-card h5 {
     margin-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
 }
 
 .d-flex {
@@ -576,14 +567,14 @@ body {
 .bg-warning {
     background-color: #ffc107;
     color: black;
-    padding: 2px 8px;
-    border-radius: 12px;
-    font-size: 0.8rem;
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.6rem;
+    font-size: 8pt;
 }
 
 .meta-analysis-container {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .top-heroes {
@@ -591,7 +582,7 @@ body {
 }
 
 .top-heroes h6 {
-    margin-bottom: 15px;
+    margin-bottom: 0.75rem;
     color: #aaa;
 }
 
@@ -602,10 +593,10 @@ body {
 
 .news-item {
     display: block;
-    padding: 15px;
+    padding: 0.75rem;
     background-color: #343a40;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    border-radius: 0.25rem;
     text-decoration: none;
     color: #f5f5f5;
     transition: background-color 0.2s;
@@ -616,19 +607,147 @@ body {
 }
 
 .news-item h6 {
-    margin: 0 0 5px 0;
+    margin: 0 0 0.1rem 0;
 }
 
 .news-item p {
     margin: 0;
-    font-size: 0.9rem;
-    color: #aaa;
+    font-size: 6.75pt;
 }
 
 .mb-1 {
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.1rem;
 }
 
 .text-muted {
     color: #aaa;
+}
+
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #121212;
+    color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 20rem;
+    padding: 1rem;
+}
+
+.login-card {
+    background-color: #2a2a2a;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.2rem 0.75rem rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.login-card h2 {
+    margin-bottom: 1rem;
+    font-size: 13.5pt;
+}
+
+.input-group {
+    margin-bottom: 0.75rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.25rem;
+    font-size: 8pt;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 0.5rem 0.6rem;
+    background-color: #343a40;
+    color: #f5f5f5;
+    border-radius: 0.25rem;
+    font-size: 12pt;
+    box-sizing: border-box;
+}
+
+.input-group textarea {
+    resize: vertical;
+    min-height: 5rem;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.btn {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.6rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.login-footer {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-footer a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 6.75pt;
+}
+
+.login-footer a:hover {
+    text-decoration: underline;
+}
+
+.profile-info {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.profile-avatar {
+    text-align: center;
+}
+
+.avatar-img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 8pt;
+}
+
+.profile-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.security-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
 }
