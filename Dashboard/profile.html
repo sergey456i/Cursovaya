@@ -8,52 +8,54 @@
 </head>
 <body>
 <div class="container">
-    <!-- Боковое меню -->
-    <div id="sidebar">
+    <!-- Боковая панель -->
+    <aside id="sidebar">
         <h4 class="sidebar-title">Dota 2 Dashboard</h4>
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="index.html" data-icon="&#127968;">
-                    Главная
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="match_analysis.html" data-icon="&#128202;">
-                    Анализ матча
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="player_profile.html" data-icon="&#128522;">
-                    Профиль игрока
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="heroes_analysis.html" data-icon="&#127917;">
-                    Герои
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="esports.html" data-icon="&#127942;">
-                    Киберспорт
-                </a>
-            </li>
-        </ul>
+        <nav>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="index.html" data-icon="&#127968;">
+                        Главная
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="match_analysis.html" data-icon="&#128202;">
+                        Анализ матча
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="player_profile.html" data-icon="&#128522;">
+                        Профиль игрока
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="heroes_analysis.html" data-icon="&#127917;">
+                        Герои
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="esports.html" data-icon="&#127942;">
+                        Киберспорт
+                    </a>
+                </li>
+            </ul>
+        </nav>
         <a href="help.html" class="help">Помощь</a>
-        <div class="sidebar-footer">
+        <footer class="sidebar-footer">
             <small>© 2025 Dota Dashboard</small>
-        </div>
-    </div>
+        </footer>
+    </aside>
 
     <!-- Основной контент -->
-    <div id="main-content">
-        <div class="header">
+    <main id="main-content">
+        <header class="page-header">
             <h2>Мой профиль</h2>
-        </div>
+        </header>
 
-        <div class="card-section">
-            <div class="card-header">
-                <h5>Информация о пользователе</h5>
-            </div>
+        <section class="card-section">
+            <header class="card-header">
+                <h3>Информация о пользователе</h3>
+            </header>
             <div class="card-body">
                 <div class="profile-info">
                     <div class="profile-avatar">
@@ -77,12 +79,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="card-section">
-            <div class="card-header">
-                <h5>Безопасность</h5>
-            </div>
+        <section class="card-section">
+            <header class="card-header">
+                <h3>Безопасность</h3>
+            </header>
             <div class="card-body">
                 <div class="security-settings">
                     <div class="input-group">
@@ -100,8 +102,8 @@
                     <button class="btn">Сменить пароль</button>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </div>
 </body>
 </html>

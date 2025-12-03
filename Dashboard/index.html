@@ -8,144 +8,141 @@
 </head>
 <body>
 <div class="container">
-    <!-- Боковое меню -->
-    <div id="sidebar">
-        <a href="index.html"> <img src="img/logo.svg" width="50" height="50" alt="Логотип"/></a>
+    <!-- Боковая панель навигации -->
+    <aside id="sidebar">
+        <a href="index.html">
+            <img src="img/logo.svg" alt="Логотип Dota 2 Dashboard" />
+        </a>
         <h4 class="sidebar-title">Dota 2 Dashboard</h4>
-        <ul class="nav">
-            <li class="nav-item active">
-                <a href="index.html" data-icon="&#127968;">
-                    Главная
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="match_analysis.html" data-icon="&#128202;">
-                    Анализ матча
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="player_profile.html" data-icon="&#128522;">
-                    Профиль игрока
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="heroes_analysis.html" data-icon="&#127917;">
-                    Герои
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="esports.html" data-icon="&#127942;">
-                    Киберспорт
-                </a>
-            </li>
-        </ul>
+        <nav aria-label="Основная навигация">
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a href="match_analysis.html">Анализ матча</a>
+                </li>
+                <li class="nav-item">
+                    <a href="player_profile.html">Профиль игрока</a>
+                </li>
+                <li class="nav-item">
+                    <a href="heroes_analysis.html">Герои</a>
+                </li>
+                <li class="nav-item">
+                    <a href="esports.html">Киберспорт</a>
+                </li>
+            </ul>
+        </nav>
         <a href="help.html" class="help">Помощь</a>
-        <div class="sidebar-footer">
-            <small>© 2025 Dota Dashboard</small>
-        </div>
-    </div>
+        <footer class="sidebar-footer">
+            <small>2025 Dota Dashboard</small>
+        </footer>
+    </aside>
 
-    <!-- Основной контент -->
-    <div id="main-content">
-        <div class="header">
-            <div>
+    <!-- Основной контент страницы -->
+    <main id="main-content">
+        <header class="page-header">
+            <div class="auth-links">
                 <a href="register.html">Регистрация</a>
                 <a href="login.html">Вход</a>
-                <a href="profile.html"><img src="img/user_icon_149329.svg" width="40" height="40" alt="Профиль"/></a>
+                <a href="profile.html">
+                    <img src="img/user_icon_149329.svg"  alt="Профиль пользователя" class="icon-profile" />
+                </a>
             </div>
-            <div>
+            <div class="title-and-refresh">
                 <h2>Обзор</h2>
-                <a href="index.html" class="reload">Обновить</a>
+                <a href="index.html" class="reload">
+                    <img src="img/icons8-обновление-30.svg" alt="Обновить" />
+                </a>
             </div>
-        </div>
+        </header>
 
-        <!-- Карточки KPI -->
-        <div class="cards-container">
+        <!-- Карточки с ключевыми показателями -->
+        <section class="cards-container" >
             <div class="card card-matches">
                 <h5>Матчи</h5>
-                <h3>127</h3>
+                <p><strong>127</strong></p>
             </div>
             <div class="card card-winrate">
                 <h5>Win Rate</h5>
-                <h3>58%</h3>
+                <p><strong>58%</strong></p>
             </div>
             <div class="card card-mmr">
                 <h5>Средний MMR</h5>
-                <h3>4120</h3>
+                <p><strong>4120</strong></p>
             </div>
             <div class="card card-gpm">
                 <h5>Средний GPM</h5>
-                <h3>420</h3>
+                <p><strong>420</strong></p>
             </div>
             <div class="card card-hero">
                 <h5>Топ герой</h5>
-                <h3>Invoker</h3>
+                <p><strong>Invoker</strong></p>
             </div>
             <div class="card card-rank">
                 <h5>До след. ранга</h5>
-                <h3>87%</h3>
+                <p><strong>87%</strong></p>
             </div>
-        </div>
+        </section>
 
         <!-- График активности -->
-        <div class="card-section">
-            <div class="card-header">
-                <h5>Активность (последние 30 дней)</h5>
-            </div>
+        <section class="card-section" >
+            <header class="card-header">
+                <h3>Активность (последние 30 дней)</h3>
+            </header>
             <div class="card-body-placeholder">
-                <div class="chart-placeholder">&#128200;</div>
                 <p>Здесь будет график активности (победы/поражения)</p>
             </div>
-        </div>
+        </section>
 
         <!-- Таблица последних матчей -->
-        <div class="card-section">
-            <div class="card-header">
-                <h5>Последние 5 матчей</h5>
-            </div>
+        <section class="card-section">
+            <header class="card-header">
+                <h3>Последние 5 матчей</h3>
+            </header>
             <div class="table-container">
                 <table class="match-table">
                     <thead>
                     <tr>
-                        <th>Дата</th>
-                        <th>Герой</th>
-                        <th>Результат</th>
-                        <th>GPM</th>
-                        <th>KDA</th>
+                        <th scope="col">Дата</th>
+                        <th scope="col">Герой</th>
+                        <th scope="col">Результат</th>
+                        <th scope="col">GPM</th>
+                        <th scope="col">KDA</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
                         <td>2025-11-10</td>
-                        <td><img src="img/invoker.png" width="45" alt="Invoker"> Invoker</td>
+                        <td><img src="img/invoker.png" alt="Invoker" class="icon-heroes"> Invoker</td>
                         <td class="win">Победа</td>
                         <td>450</td>
                         <td>12 / 4 / 8</td>
                     </tr>
                     <tr>
                         <td>2025-11-08</td>
-                        <td><img src="img/pudge.png" width="45" alt="Pudge"> Pudge</td>
+                        <td><img src="img/pudge.png" alt="Pudge" class="icon-heroes"> Pudge</td>
                         <td class="lose">Поражение</td>
                         <td>320</td>
                         <td>3 / 8 / 5</td>
                     </tr>
                     <tr>
                         <td>2025-11-06</td>
-                        <td><img src="img/axe.png" width="45" alt="Axe"> Axe</td>
+                        <td><img src="img/axe.png" alt="Axe" class="icon-heroes"> Axe</td>
                         <td class="win">Победа</td>
                         <td>380</td>
                         <td>7 / 3 / 10</td>
                     </tr>
                     <tr>
                         <td>2025-11-04</td>
-                        <td><img src="img/phantom_assasin.png" width="45" alt="PA"> PA</td>
+                        <td><img src="img/phantom_assasin.png" alt="Phantom Assassin" class="icon-heroes"> PA</td>
                         <td class="win">Победа</td>
                         <td>520</td>
                         <td>15 / 2 / 6</td>
                     </tr>
                     <tr>
                         <td>2025-11-02</td>
-                        <td><img src="img/techies.png" width="45" height="25" alt="Techies"> Techies</td>
+                        <td><img src="img/techies.png" alt="Techies" class="icon-heroes techies"> Techies</td>
                         <td class="lose">Поражение</td>
                         <td>210</td>
                         <td>2 / 10 / 3</td>
@@ -153,8 +150,8 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-    </div>
+        </section>
+    </main>
 </div>
 </body>
 </html>

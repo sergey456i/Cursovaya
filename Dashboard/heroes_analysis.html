@@ -8,59 +8,57 @@
 </head>
 <body>
 <div class="container">
-  <!-- Боковое меню -->
-  <div id="sidebar">
-    <a href="index.html"> <img src="img/logo.svg" width="50" height="50" alt="Логотип"/></a>
+  <!-- Боковая панель -->
+  <aside id="sidebar">
+    <a href="index.html" class="logo-link">
+      <img src="img/logo.svg" alt="Логотип Dota 2 Dashboard" />
+    </a>
     <h4 class="sidebar-title">Dota 2 Dashboard</h4>
-    <ul class="nav">
-      <li class="nav-item ">
-        <a href="index.html" data-icon="&#127968;">
-          Главная
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="match_analysis.html" data-icon="&#128202;">
-          Анализ матча
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="player_profile.html" data-icon="&#128522;">
-          Профиль игрока
-        </a>
-      </li>
-      <li class="nav-item active">
-        <a href="heroes_analysis.html" data-icon="&#127917;">
-          Герои
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="esports.html" data-icon="&#127942;">
-          Киберспорт
-        </a>
-      </li>
-    </ul>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a href="match_analysis.html">Анализ матча</a>
+        </li>
+        <li class="nav-item">
+          <a href="player_profile.html">Профиль игрока</a>
+        </li>
+        <li class="nav-item active">
+          <a href="heroes_analysis.html">Герои</a>
+        </li>
+        <li class="nav-item">
+          <a href="esports.html">Киберспорт</a>
+        </li>
+      </ul>
+    </nav>
     <a href="help.html" class="help">Помощь</a>
-    <div class="sidebar-footer">
+    <footer class="sidebar-footer">
       <small>© 2025 Dota Dashboard</small>
-    </div>
-  </div>
+    </footer>
+  </aside>
 
   <!-- Основной контент -->
-  <div id="main-content">
-    <div class="header">
-      <div>
+  <main id="main-content">
+    <header class="page-header">
+      <div class="auth-links">
         <a href="register.html">Регистрация</a>
         <a href="login.html">Вход</a>
-        <a href="profile.html"><img src="img/user_icon_149329.svg" width="40" height="40" alt="Профиль"/></a>
+        <a href="profile.html">
+          <img src="img/user_icon_149329.svg" alt="Профиль пользователя" class="icon-profile"/>
+        </a>
       </div>
-      <div>
+      <div class="title-and-refresh">
         <h2>Анализ героев</h2>
-        <a href="heroes_analysis.html" class="reload">Обновить</a>
+        <a href="heroes_analysis.html" class="reload">
+          <img src="img/icons8-обновление-30.svg" alt="Обновить" />
+        </a>
       </div>
-    </div>
+    </header>
 
     <!-- Фильтры -->
-    <div class="card-section">
+    <section class="card-section">
       <div class="card-body">
         <form class="filters">
           <div class="form-row">
@@ -112,38 +110,38 @@
           </div>
         </form>
       </div>
-    </div>
+    </section>
 
     <!-- Сравнение героев -->
-    <div class="card-section">
-      <div class="card-header">
-        <h5>Сравнение героев</h5>
-      </div>
+    <section class="card-section">
+      <header class="card-header">
+        <h3>Сравнение героев</h3>
+      </header>
       <div class="card-body">
         <p>Выберите до 3 героев для сравнения:</p>
         <div class="compare-heroes">
           <label class="compare-checkbox">
             <input type="checkbox" value="invoker" id="chkInvoker">
-            <img src="img/invoker.png" width="24" alt="Invoker"> Invoker
+            <img src="img/invoker.png"  alt="Invoker" class="icon-heroes"> Invoker
           </label>
           <label class="compare-checkbox">
             <input type="checkbox" value="pudge" id="chkPudge">
-            <img src="img/pudge.png" width="24" alt="Pudge"> Pudge
+            <img src="img/pudge.png"  alt="Pudge" class="icon-heroes"> Pudge
           </label>
           <label class="compare-checkbox">
             <input type="checkbox" value="axe" id="chkAxe">
-            <img src="img/axe.png" width="24" alt="Axe"> Axe
+            <img src="img/axe.png" alt="Axe" class="icon-heroes"> Axe
           </label>
           <button class="btn btn-outline-info btn-sm">Сравнить</button>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Таблица героев -->
-    <div class="card-section">
-      <div class="card-header">
-        <h5>Таблица героев</h5>
-      </div>
+    <section class="card-section">
+      <header class="card-header">
+        <h3>Таблица героев</h3>
+      </header>
       <div class="table-container">
         <table class="match-table">
           <thead>
@@ -158,7 +156,7 @@
           </thead>
           <tbody>
           <tr>
-            <td><img src="img/invoker.png" width="24" alt="Invoker"> Invoker</td>
+            <td><img src="img/invoker.png" class="icon-heroes" alt="Invoker"> Invoker</td>
             <td class="win">56.2%</td>
             <td>8.7%</td>
             <td>480</td>
@@ -166,7 +164,7 @@
             <td>Mid</td>
           </tr>
           <tr>
-            <td><img src="img/pudge.png" width="24" alt="Pudge"> Pudge</td>
+            <td><img src="img/pudge.png" class="icon-heroes" alt="Pudge"> Pudge</td>
             <td class="lose">48.3%</td>
             <td>12.1%</td>
             <td>280</td>
@@ -174,7 +172,7 @@
             <td>Support</td>
           </tr>
           <tr>
-            <td><img src="img/axe.png" width="24" alt="Axe"> Axe</td>
+            <td><img src="img/axe.png" class="icon-heroes" alt="Axe"> Axe</td>
             <td class="win">53.8%</td>
             <td>5.3%</td>
             <td>380</td>
@@ -182,7 +180,7 @@
             <td>Offlane</td>
           </tr>
           <tr>
-            <td><img src="img/phantom_assasin.png" width="24" alt="PA"> PA</td>
+            <td><img src="img/phantom_assasin.png" class="icon-heroes" alt="PA"> PA</td>
             <td class="win">54.1%</td>
             <td>6.9%</td>
             <td>520</td>
@@ -190,7 +188,7 @@
             <td>Carry</td>
           </tr>
           <tr>
-            <td><img src="img/techies.png" width="24" height="15" alt="Techies"> Techies</td>
+            <td><img src="img/techies.png" class="icon-heroes techies" alt="Techies"> Techies</td>
             <td class="lose">42.7%</td>
             <td>1.2%</td>
             <td>210</td>
@@ -200,46 +198,46 @@
           </tbody>
         </table>
       </div>
-    </div>
+    </section>
 
     <!-- Графики -->
     <div class="charts-grid">
-      <div class="card-section">
-        <div class="card-header">
-          <h5>Win Rate по рангам</h5>
-        </div>
+      <section class="card-section">
+        <header class="card-header">
+          <h3>Win Rate по рангам</h3>
+        </header>
         <div class="card-body-placeholder">
-          <div class="chart-placeholder">📊</div>
+          <div class="chart-placeholder"></div>
           <p>Гистограмма win rate героев по рангам</p>
         </div>
-      </div>
-      <div class="card-section">
-        <div class="card-header">
-          <h5>Популярность по времени</h5>
-        </div>
+      </section>
+      <section class="card-section">
+        <header class="card-header">
+          <h3>Популярность по времени</h3>
+        </header>
         <div class="card-body-placeholder">
-          <div class="chart-placeholder">📉</div>
+          <div class="chart-placeholder"></div>
           <p>Линейный график популярности героев (мета)</p>
         </div>
-      </div>
+      </section>
     </div>
 
     <!-- Герой недели -->
-    <div class="card-section">
-      <div class="card-header">
-        <h5>Герой недели</h5>
-      </div>
+    <section class="card-section">
+      <header class="card-header">
+        <h3>Герой недели</h3>
+      </header>
       <div class="card-body">
         <div class="hero-of-week">
           <h3>
-            <img src="img/invoker.png" width="48" alt="Invoker"> Invoker
+            <img src="img/invoker.png" class="icon-heroes" alt="Invoker"> Invoker
           </h3>
           <p class="lead">Win Rate: <span class="win">+3.2%</span> за неделю</p>
           <p>Популярность: <span class="win">+1.1%</span></p>
         </div>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
 </div>
 </body>
 </html>

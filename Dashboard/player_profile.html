@@ -8,63 +8,61 @@
 </head>
 <body>
 <div class="container">
-  <!-- Боковое меню -->
-  <div id="sidebar">
-    <a href="index.html"> <img src="img/logo.svg" width="50" height="50" alt="Логотип"/></a>
+  <!-- Боковая панель -->
+  <aside id="sidebar">
+    <a href="index.html" class="logo-link">
+      <img src="img/logo.svg" alt="Логотип Dota 2 Dashboard"/>
+    </a>
     <h4 class="sidebar-title">Dota 2 Dashboard</h4>
-    <ul class="nav">
-      <li class="nav-item ">
-        <a href="index.html" data-icon="&#127968;">
-          Главная
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="match_analysis.html" data-icon="&#128202;">
-          Анализ матча
-        </a>
-      </li>
-      <li class="nav-item active">
-        <a href="player_profile.html" data-icon="&#128522;">
-          Профиль игрока
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="heroes_analysis.html" data-icon="&#127917;">
-          Герои
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="esports.html" data-icon="&#127942;">
-          Киберспорт
-        </a>
-      </li>
-    </ul>
+    <nav>
+      <ul class="nav">
+        <li class="nav-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="nav-item">
+          <a href="match_analysis.html">Анализ матча</a>
+        </li>
+        <li class="nav-item active">
+          <a href="player_profile.html">Профиль игрока</a>
+        </li>
+        <li class="nav-item">
+          <a href="heroes_analysis.html">Герои</a>
+        </li>
+        <li class="nav-item">
+          <a href="esports.html">Киберспорт</a>
+        </li>
+      </ul>
+    </nav>
     <a href="help.html" class="help">Помощь</a>
-    <div class="sidebar-footer">
+    <footer class="sidebar-footer">
       <small>© 2025 Dota Dashboard</small>
-    </div>
-  </div>
+    </footer>
+  </aside>
 
   <!-- Основной контент -->
-  <div id="main-content">
-    <div class="header">
-      <div>
+  <main id="main-content">
+    <header class="page-header">
+      <div class="auth-links">
         <a href="register.html">Регистрация</a>
         <a href="login.html">Вход</a>
-        <a href="profile.html"><img src="img/user_icon_149329.svg" width="40" height="40" alt="Профиль"/></a>
+        <a href="profile.html">
+          <img src="img/user_icon_149329.svg" class="icon-profile" alt="Профиль пользователя"/>
+        </a>
       </div>
-      <div>
+      <div class="title-and-refresh">
         <h2>Профиль игрока</h2>
-        <a href="player_profile.html" class="reload">Обновить</a>
+        <a href="player_profile.html" class="reload">
+          <img src="img/icons8-обновление-30.svg" alt="Обновить" />
+        </a>
       </div>
-    </div>
+    </header>
 
     <!-- Информация об игроке -->
-    <div class="card-section">
+    <section class="card-section">
       <div class="card-body">
         <div class="player-info">
           <div class="player-avatar">
-            <img src="img/icons8-dota-2-50.png" alt="Avatar" class="avatar-img">
+            <img src="img/icons8-dota-2-50.png" alt="Аватар игрока" class="avatar-img">
             <h5 class="player-name">PlayerName</h5>
           </div>
           <div class="player-stats">
@@ -95,7 +93,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- Вкладки -->
     <div class="tabs">
@@ -108,10 +106,10 @@
 
       <!-- Вкладка "Общее" -->
       <div class="tab-content active" id="general">
-        <div class="card-section">
-          <div class="card-header">
-            <h5>Основные показатели</h5>
-          </div>
+        <section class="card-section">
+          <header class="card-header">
+            <h3>Основные показатели</h3>
+          </header>
           <div class="card-body">
             <ul class="stats-list">
               <li class="stat-entry">
@@ -136,24 +134,24 @@
               </li>
             </ul>
           </div>
-        </div>
-        <div class="card-section">
-          <div class="card-header">
-            <h5>График Win Rate</h5>
-          </div>
+        </section>
+        <section class="card-section">
+          <header class="card-header">
+            <h3>График Win Rate</h3>
+          </header>
           <div class="card-body-placeholder">
             <div class="chart-placeholder">📈</div>
             <p>Здесь будет график win rate по неделям</p>
           </div>
-        </div>
+        </section>
       </div>
 
       <!-- Вкладка "Герои" -->
       <div class="tab-content" id="heroes" style="display: none;">
-        <div class="card-section">
-          <div class="card-header">
-            <h5>Статистика по героям</h5>
-          </div>
+        <section class="card-section">
+          <header class="card-header">
+            <h3>Статистика по героям</h3>
+          </header>
           <div class="table-container">
             <table class="match-table">
               <thead>
@@ -167,21 +165,21 @@
               </thead>
               <tbody>
               <tr>
-                <td><img src="img/invoker.png" width="256" alt="Invoker"> Invoker</td>
+                <td><img src="img/invoker.png" class="heroes-img" alt="Invoker"> Invoker</td>
                 <td>27</td>
                 <td>63%</td>
                 <td>480</td>
                 <td>Mid</td>
               </tr>
               <tr>
-                <td><img src="img/pudge.png" width="256" alt="Pudge"> Pudge</td>
+                <td><img src="img/pudge.png" class="heroes-img" alt="Pudge"> Pudge</td>
                 <td>18</td>
                 <td>50%</td>
                 <td>280</td>
                 <td>Support</td>
               </tr>
               <tr>
-                <td><img src="img/axe.png" width="256"  alt="Axe"> Axe</td>
+                <td><img src="img/axe.png" class="heroes-img"  alt="Axe"> Axe</td>
                 <td>15</td>
                 <td>53%</td>
                 <td>380</td>
@@ -190,15 +188,15 @@
               </tbody>
             </table>
           </div>
-        </div>
+        </section>
       </div>
 
       <!-- Вкладка "Роли" -->
       <div class="tab-content" id="roles" style="display: none;">
-        <div class="card-section">
-          <div class="card-header">
-            <h5>Статистика по ролям</h5>
-          </div>
+        <section class="card-section">
+          <header class="card-header">
+            <h3>Статистика по ролям</h3>
+          </header>
           <div class="card-body">
             <div class="roles-container">
               <ul class="stats-list">
@@ -224,20 +222,20 @@
                 </li>
               </ul>
               <div class="chart-placeholder-card">
-                <div class="chart-placeholder">🥧</div>
+                <div class="chart-placeholder"></div>
                 <p class="chart-label">Диаграмма распределения по ролям</p>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
 
       <!-- Вкладка "Прогресс" -->
       <div class="tab-content" id="progress" style="display: none;">
-        <div class="card-section">
-          <div class="card-header">
-            <h5>Изменение MMR и ранга</h5>
-          </div>
+        <section class="card-section">
+          <header class="card-header">
+            <h3>Изменение MMR и ранга</h3>
+          </header>
           <div class="card-body">
             <div class="chart-placeholder-card">
               <div class="chart-placeholder">📉</div>
@@ -250,10 +248,10 @@
               <span class="progress-text">До следующего Immortal (87%)</span>
             </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
-  </div>
+  </main>
 </div>
 
 <script>
