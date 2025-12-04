@@ -11,15 +11,15 @@
 
 .login-container {
     width: 100%;
-    max-width: 27rem;
-    padding: 1rem;
+    max-width:30% ;
+    padding: 16px;
 }
 
 .login-card {
     background-color: #2a2a2a;
-    border-radius: 1rem;
-    padding: 2rem;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 32px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
@@ -27,7 +27,7 @@
     text-decoration: none;
     color: #f5f5f5;
     transition: 0.2s;
-    padding: 1rem;
+    padding: 16px;
     border-radius: 5px;
 }
 
@@ -36,12 +36,12 @@
 }
 
 .login-card h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     font-size: 27pt;
 }
 
 .input-group {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     text-align: left;
 }
 
@@ -53,12 +53,13 @@
 
 .input-group input {
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 16px;
     background-color: #343a40;
     color: #f5f5f5;
     font-size: 15pt;
     box-sizing: border-box;
     border-radius: 5px;
+    border: none;
 }
 
 .input-group input:focus {
@@ -68,28 +69,28 @@
 
 .btn {
     width: 100%;
-    background-color: #007bff;
+    background-color: #f37e1c;
     color: white;
     border: none;
-    padding: 1rem;
+    padding: 16px;
     cursor: pointer;
     font-size: 15pt;
-    margin-top: 1rem;
+    margin-top: 16px;
     border-radius: 5px;
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #6c5526;
 }
 
 .login-footer {
-    margin-top: 1rem;
+    margin-top: 16px;
     display: flex;
     justify-content: space-between;
 }
 
 .login-footer a {
-    color: #007bff;
+    color: #f37e1c;
     text-decoration: none;
     font-size: 13.5pt;
 }

@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dota 2 Dashboard - Анализ героев</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/adaptiv.css">
 </head>
 <body>
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
 <div class="container">
-  <!-- Боковая панель -->
+  <!-- Боковая панель навигации -->
+  <label for="menu-toggle" class="burger-btn">☰</label>
   <aside id="sidebar">
     <a href="index.html" class="logo-link">
-      <img src="img/logo.svg" alt="Логотип Dota 2 Dashboard" />
+      <img src="img/logo.svg" alt="Логотип Dota 2 Dashboard" class="logo-icon"/>
     </a>
     <h4 class="sidebar-title">Dota 2 Dashboard</h4>
     <nav>
@@ -33,8 +36,8 @@
         </li>
       </ul>
     </nav>
-    <a href="help.html" class="help">Помощь</a>
     <footer class="sidebar-footer">
+      <a href="help.html" class="help">Помощь</a>
       <small>© 2025 Dota Dashboard</small>
     </footer>
   </aside>
@@ -122,15 +125,15 @@
         <div class="compare-heroes">
           <label class="compare-checkbox">
             <input type="checkbox" value="invoker" id="chkInvoker">
-            <img src="img/invoker.png"  alt="Invoker" class="icon-heroes"> Invoker
+            <img src="img/invoker.png"  alt="Invoker" class="icon-heroes">
           </label>
           <label class="compare-checkbox">
             <input type="checkbox" value="pudge" id="chkPudge">
-            <img src="img/pudge.png"  alt="Pudge" class="icon-heroes"> Pudge
+            <img src="img/pudge.png"  alt="Pudge" class="icon-heroes">
           </label>
           <label class="compare-checkbox">
             <input type="checkbox" value="axe" id="chkAxe">
-            <img src="img/axe.png" alt="Axe" class="icon-heroes"> Axe
+            <img src="img/axe.png" alt="Axe" class="icon-heroes">
           </label>
           <button class="btn btn-outline-info btn-sm">Сравнить</button>
         </div>
@@ -208,6 +211,7 @@
         </header>
         <div class="card-body-placeholder">
           <div class="chart-placeholder"></div>
+          <img src="img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
           <p>Гистограмма win rate героев по рангам</p>
         </div>
       </section>
@@ -217,6 +221,7 @@
         </header>
         <div class="card-body-placeholder">
           <div class="chart-placeholder"></div>
+          <img src="img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
           <p>Линейный график популярности героев (мета)</p>
         </div>
       </section>

@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Профиль - Dota 2 Dashboard</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/adaptiv.css">
 </head>
 <body>
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
 <div class="container">
-    <!-- Боковая панель -->
+    <!-- Боковая панель навигации -->
+    <label for="menu-toggle" class="burger-btn">☰</label>
     <aside id="sidebar">
+        <img src="img/logo.svg" alt="Логотип Dota 2 Dashboard" class="logo-icon" />
         <h4 class="sidebar-title">Dota 2 Dashboard</h4>
         <nav>
             <ul class="nav">
@@ -40,8 +44,8 @@
                 </li>
             </ul>
         </nav>
-        <a href="help.html" class="help">Помощь</a>
         <footer class="sidebar-footer">
+            <a href="help.html" class="help">Помощь</a>
             <small>© 2025 Dota Dashboard</small>
         </footer>
     </aside>

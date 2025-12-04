@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dota 2 Dashboard - Анализ матча</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/adaptiv.css">
 </head>
 <body>
+<input type="checkbox" id="menu-toggle" class="menu-toggle" />
 <div class="container">
-  <!-- Боковая панель -->
+  <!-- Боковая панель навигации -->
+  <label for="menu-toggle" class="burger-btn">☰</label>
   <aside id="sidebar">
     <a href="index.html" class="logo-link">
-      <img src="img/logo.svg"  alt="Логотип Dota 2 Dashboard" />
+      <img src="img/logo.svg"  alt="Логотип Dota 2 Dashboard" class="logo-icon" />
     </a>
     <h4 class="sidebar-title">Dota 2 Dashboard</h4>
     <nav>
@@ -33,8 +36,8 @@
         </li>
       </ul>
     </nav>
-    <a href="help.html" class="help">Помощь</a>
     <footer class="sidebar-footer">
+      <a href="help.html" class="help">Помощь</a>
       <small>© 2025 Dota Dashboard</small>
     </footer>
   </aside>
@@ -190,11 +193,11 @@
         <!-- Графики -->
         <div class="charts-container">
           <div class="chart-placeholder-card">
-            <div class="chart-placeholder">💰</div>
+            <img src="img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
             <p class="chart-label">Кривая золота</p>
           </div>
           <div class="chart-placeholder-card">
-            <div class="chart-placeholder">📈</div>
+            <img src="img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
             <p class="chart-label">Кривая опыта</p>
           </div>
         </div>

@@ -1,8 +1,13 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    ::-webkit-scrollbar{
+        width: 20px;
+    }
+    scrollbar-color: #f37e1c #111 ;
+    scrollbar-width: auto;
+    overflow-x: hidden;
 }
 
 a {
@@ -20,6 +25,7 @@ body {
 .container {
     display: flex;
     min-height: 100vh;
+    position: relative;
 }
 
 aside#sidebar {
@@ -29,6 +35,9 @@ aside#sidebar {
     padding: 16px;
     display: flex;
     flex-direction: column;
+    transition: width 0.3s ease;
+    position: relative;
+    z-index: 100;
 }
 
 
@@ -83,6 +92,8 @@ nav .nav-item.active a {
     margin-top: auto;
     text-align: center;
     color: #aaa;
+    display: flex;
+    flex-direction: column;
 }
 
 main#main-content {
@@ -151,10 +162,6 @@ main#main-content {
     min-width: 100px;
 }
 
-.card h5 {
-    margin-bottom: 10px;
-    font-size: 12pt;
-}
 
 .card-matches,
 .card-winrate,
@@ -180,6 +187,9 @@ main#main-content {
 
 .card-section .card-body {
     padding: 16px;
+}
+.card-body p{
+    padding-bottom: 10px;
 }
 
 .card-section .card-body-placeholder {
@@ -223,7 +233,7 @@ main#main-content {
 }
 
 .win {
-    color: #28a745;
+    color: #f37e1c;
     font-weight: bold;
 }
 
@@ -263,17 +273,15 @@ main#main-content {
     color: #f5f5f5;
     border-radius: 4px;
     font-size: 9pt;
+    border: none;
+    outline: none;
 }
 
-.form-control:focus {
-    outline: none;
-    border-color: #007bff;
-}
 
 .form-actions {
     margin-top: 12px;
     display: flex;
-    gap: 8px; /* 0.5rem */
+    gap: 8px;
 }
 
 .clickable-row {
@@ -295,9 +303,8 @@ main#main-content {
     flex: 1;
 }
 
-.team h6 {
-    margin-bottom: 8px;
-    color: #aaa;
+.team h4{
+    padding-bottom: 10px;
 }
 
 .team-list {
@@ -330,6 +337,10 @@ main#main-content {
     padding: 16px;
     border-radius: 8px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .chart-label {
@@ -383,10 +394,6 @@ main#main-content {
     text-align: center;
 }
 
-.stat-item h6 {
-    color: #aaa;
-    margin-bottom: 4px;
-}
 
 .stat-item h4 {
     margin: 0;
@@ -436,7 +443,7 @@ main#main-content {
 }
 
 .badge {
-    background-color: #007bff;
+    background-color: #f37e1c;
     color: white;
     padding: 2px 6px;
     border-radius: 10px;
@@ -468,8 +475,7 @@ main#main-content {
 
 .progress-fill {
     height: 100%;
-    background-color: #28a745;
-    transition: width 0.3s ease;
+    background-color: #f37e1c;
 }
 
 .progress-text {
@@ -483,8 +489,19 @@ main#main-content {
 .compare-heroes {
     display: flex;
     align-items: center;
-    gap: 16px;
     flex-wrap: wrap;
+    justify-content: space-between;
+}
+.compare-heroes .icon-heroes{
+    width: 150px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+#chkAxe, #chkInvoker, #chkPudge{
+    transform: scale(1.7);
+    margin-right: 5%;
+    margin-left: 2%;
 }
 
 .compare-checkbox {
@@ -501,7 +518,7 @@ main#main-content {
 
 .charts-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* repeat(auto-fit, minmax(20rem, 1fr)) */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 16px;
     margin-bottom: 24px;
 }
@@ -525,7 +542,7 @@ main#main-content {
 
 .tournaments-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* repeat(auto-fit, minmax(15rem, 1fr)) */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 16px;
 }
 
@@ -534,13 +551,6 @@ main#main-content {
     padding: 12px;
     border-radius: 8px;
 }
-
-.tournament-card h5 {
-    margin-top: 0;
-    margin-bottom: 8px;
-}
-
-
 .d-flex {
     display: flex;
 }
@@ -571,9 +581,8 @@ main#main-content {
     flex: 1;
 }
 
-.top-heroes h6 {
-    margin-bottom: 12px;
-    color: #aaa;
+.top-heroes h4 {
+    padding-bottom: 5px;
 }
 
 
@@ -597,9 +606,6 @@ main#main-content {
     background-color: #3c444d;
 }
 
-.news-item h6 {
-    margin: 0 0 2px 0;
-}
 
 .news-item p {
     margin: 0;
@@ -664,17 +670,13 @@ main#main-content {
     border-radius: 4px;
     font-size: 12pt;
     box-sizing: border-box;
+    border: none;
+    outline: none;
 }
 
 .input-group textarea {
     resize: vertical;
     min-height: 80px;
-}
-
-.input-group input:focus,
-.input-group textarea:focus {
-    outline: none;
-    border-color: #007bff;
 }
 
 .btn {
@@ -729,7 +731,7 @@ main#main-content {
 }
 
 .btn-sm {
-    padding: 4px 8px;
+    width: 20%;
     font-size: 11pt;
 }
 
@@ -764,3 +766,21 @@ main#main-content {
 .heroes-img{
     width: 250px;
 }
+.stat-entry span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profile-avatar .btn-sm{
+    width: 100%;
+}
+.logo-icon{
+    width: 75px;
+    height: 75px;
+    margin-left: 25%;
+}
+.schedule{
+    width: 200px;
+    height: 100px;
+}
+
