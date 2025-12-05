@@ -1,0 +1,74 @@
+.menu-toggle{
+    display: none;
+}
+.burger-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 16pt;
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 101;
+}
+@media (max-width: 1000px) {
+    aside#sidebar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 10%;
+        transform: translateX(-100%);
+        z-index: 100;
+        transition: transform 0.3s ease;
+    }
+    .burger-btn {
+        display: block;
+    }
+
+    .menu-toggle:checked ~ .container #sidebar {
+        transform: translateX(0);
+    }
+    .menu-toggle:checked ~ .container::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 90;
+        display: block;
+    }
+}
+@media (max-width: 500px) {
+    .card-section{
+        max-width: 330px;
+        margin: 24px auto;
+    }
+    .meta-analysis-container{
+        display: inline;
+    }
+    .btn-sm{
+        width: 35%;
+    }
+    .chart-placeholder-card img{
+        width: 120px;
+    }
+    .roles-container .chart-placeholder-card img{
+        width: 150px;
+    }
+    .profile-avatar{
+        max-width: 120px;
+    }
+    .page-header h2:first-child{
+        display: flex;
+        align-self: flex-end;
+    }
+    .tab-header button{
+        font-size: 12pt;
+    }
+}
