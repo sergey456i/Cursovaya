@@ -10,11 +10,10 @@
 <body>
 <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 <div class="container">
-  <!-- Боковая панель навигации -->
-  <label for="menu-toggle" class="burger-btn">☰</label>
+  <label for="menu-toggle" class="burger-btn"><img src="./img/icons8-hamburger-menu.svg" alt="menu"></label>
   <aside id="sidebar">
     <a href="index.html" class="logo-link">
-      <img src="img/logo.svg" alt="Логотип Dota 2 Dashboard" class="logo-icon" />
+      <img src="./img/logo.svg" alt="Логотип Dota 2 Dashboard" class="logo-icon" />
     </a>
     <h4 class="sidebar-title">Dota 2 Dashboard</h4>
     <nav aria-label="Основная навигация">
@@ -41,27 +40,22 @@
       <small>© 2025 Dota Dashboard</small>
     </footer>
   </aside>
-
-  <!-- Основной контент страницы -->
   <main id="main-content">
-    <!-- Шапка страницы -->
     <header class="page-header">
       <div class="auth-links">
         <a href="register.html">Регистрация</a>
         <a href="login.html">Вход</a>
         <a href="profile.html">
-          <img src="img/user_icon_149329.svg" class="icon-profile" alt="Профиль пользователя" />
+          <img src="./img/user_icon_149329.svg" class="icon-profile" alt="Профиль пользователя" />
         </a>
       </div>
       <div class="title-and-refresh">
         <h2>Киберспорт</h2>
         <a href="esports.html" class="reload">
-          <img src="img/icons8-обновление-30.svg" alt="Обновить" />
+          <img src="./img/icons8-обновление-30.svg" alt="Обновить" />
         </a>
       </div>
     </header>
-
-    <!-- Текущие турниры -->
     <section class="card-section">
       <header class="card-header">
         <h3>Текущие турниры</h3>
@@ -72,7 +66,7 @@
             <h4>The International 2025</h4>
             <p class="text-muted">Призовой фонд: $20,000,000</p>
             <p class="text-muted">Дата: 15 – 25 Октября</p>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex raws">
               <span>Участники: 18</span>
               <span class="badge bg-warning">Идет</span>
             </div>
@@ -81,7 +75,7 @@
             <h4>ESL One Kuala Lumpur 2025</h4>
             <p class="text-muted">Призовой фонд: $500,000</p>
             <p class="text-muted">Дата: 10 – 18 Ноября</p>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex raws">
               <span>Участники: 8</span>
               <span class="badge bg-warning">Идет</span>
             </div>
@@ -89,8 +83,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Мета-анализ -->
     <section class="card-section">
       <header class="card-header">
         <h3>Мета-анализ (после патча 7.36)</h3>
@@ -101,36 +93,34 @@
             <h4>Топ-5 героев в турнирах</h4>
             <ul class="stats-list">
               <li class="stat-entry">
-                <span><img src="img/invoker.png" class="icon-heroes" alt="Invoker"> Invoker</span>
+                <span><img src="./img/invoker.png" class="icon-heroes" alt="Invoker"> Invoker</span>
                 <span class="win">56.2%</span>
               </li>
               <li class="stat-entry">
-                <span><img src="img/pudge.png" class="icon-heroes" alt="Pudge"> Pudge</span>
+                <span><img src="./img/pudge.png" class="icon-heroes" alt="Pudge"> Pudge</span>
                 <span class="lose">48.3%</span>
               </li>
               <li class="stat-entry">
-                <span><img src="img/axe.png" class="icon-heroes" alt="Axe"> Axe</span>
+                <span><img src="./img/axe.png" class="icon-heroes" alt="Axe"> Axe</span>
                 <span class="win">53.8%</span>
               </li>
               <li class="stat-entry">
-                <span><img src="img/phantom_assasin.png" class="icon-heroes" alt="Phantom Assassin"> PA</span>
+                <span><img src="./img/phantom_assasin.png" class="icon-heroes" alt="Phantom Assassin"> PA</span>
                 <span class="win">54.1%</span>
               </li>
               <li class="stat-entry">
-                <span><img src="img/techies.png" class="icon-heroes techies" alt="Techies"> Techies</span>
+                <span><img src="./img/techies.png" class="icon-heroes techies" alt="Techies"> Techies</span>
                 <span class="lose">42.7%</span>
               </li>
             </ul>
           </div>
           <div class="chart-placeholder-card">
-            <img src="img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
+            <img src="./img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
             <p class="chart-label">Win rate героев в турнирах</p>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Командная статистика -->
     <section class="card-section">
       <header class="card-header">
         <h3>Командная статистика</h3>
@@ -150,7 +140,7 @@
           <tbody>
           <tr>
             <td>Team Spirit</td>
-            <td><img src="img/scale_1200.jpeg" class="icon-team" alt="Логотип Team Spirit"></td>
+            <td><img src="./img/scale_1200.jpeg" class="icon-team" alt="Логотип Team Spirit"></td>
             <td class="win">78%</td>
             <td>3.2 / 1.8 / 12.1</td>
             <td>420</td>
@@ -158,7 +148,7 @@
           </tr>
           <tr>
             <td>Gaimin Gladiators</td>
-            <td><img src="img/gg.png" class="icon-team" alt="Логотип Gaimin Gladiators"></td>
+            <td><img src="./img/gg.png" class="icon-team" alt="Логотип Gaimin Gladiators"></td>
             <td class="win">72%</td>
             <td>2.8 / 2.1 / 10.5</td>
             <td>405</td>
@@ -166,7 +156,7 @@
           </tr>
           <tr>
             <td>LGD Gaming</td>
-            <td><img src="img/lgd.jpeg" class="icon-team" alt="Логотип LGD Gaming"></td>
+            <td><img src="./img/lgd.jpeg" class="icon-team" alt="Логотип LGD Gaming"></td>
             <td class="win">68%</td>
             <td>2.5 / 2.3 / 9.8</td>
             <td>395</td>
@@ -174,7 +164,7 @@
           </tr>
           <tr>
             <td>Team Liquid</td>
-            <td><img src="img/5b03c677608047.5cdf337d1ed63.png" class="icon-team" alt="Логотип Team Liquid"></td>
+            <td><img src="./img/5b03c677608047.5cdf337d1ed63.png" class="icon-team" alt="Логотип Team Liquid"></td>
             <td class="win">58%</td>
             <td>2.1 / 2.7 / 8.7</td>
             <td>380</td>
@@ -182,7 +172,7 @@
           </tr>
           <tr>
             <td>Tundra Esports</td>
-            <td><img src="img/tundra.png" class="icon-team" alt="Логотип Tundra Esports"></td>
+            <td><img src="./img/tundra.png" class="icon-team" alt="Логотип Tundra Esports"></td>
             <td class="lose">45%</td>
             <td>1.8 / 3.0 / 7.2</td>
             <td>360</td>
@@ -192,8 +182,6 @@
         </table>
       </div>
     </section>
-
-    <!-- Новости и обновления -->
     <section class="card-section">
       <header class="card-header">
         <h3>Новости и обновления</h3>
@@ -201,21 +189,21 @@
       <div class="card-body">
         <div class="news-list">
           <a href="#" class="news-item">
-            <div class="d-flex w-100 justify-content-between">
+            <div class="d-flex raws">
               <h4 class="mb-1">Вышел патч 7.36c</h4>
               <time class="text-muted" datetime="2025-11-30">2 дня назад</time>
             </div>
             <p class="mb-1">Изменения в балансе Invoker и Pudge, а также фиксы багов.</p>
           </a>
           <a href="#" class="news-item">
-            <div class="d-flex w-100 justify-content-between">
+            <div class="d-flex raws">
               <h4 class="mb-1">Team Spirit выигрывает ESL One KL</h4>
               <time class="text-muted" datetime="2025-11-27">5 дней назад</time>
             </div>
             <p class="mb-1">Победа со счётом 3:1 над Gaimin Gladiators в финале.</p>
           </a>
           <a href="#" class="news-item">
-            <div class="d-flex w-100 justify-content-between">
+            <div class="d-flex raws">
               <h4 class="mb-1">Прогноз на TI2025: Кто выиграет?</h4>
               <time class="text-muted" datetime="2025-11-23">1 неделя назад</time>
             </div>

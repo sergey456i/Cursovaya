@@ -10,11 +10,10 @@
 <body>
 <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 <div class="container">
-  <!-- Боковая панель навигации -->
-  <label for="menu-toggle" class="burger-btn">☰</label>
+  <label for="menu-toggle" class="burger-btn"><img src="./img/icons8-hamburger-menu.svg" alt="menu"></label>
   <aside id="sidebar">
     <a href="index.html" class="logo-link">
-      <img src="img/logo.svg" alt="Логотип Dota 2 Dashboard" class="logo-icon"/>
+      <img src="./img/logo.svg" alt="Логотип Dota 2 Dashboard" class="logo-icon"/>
     </a>
     <h4 class="sidebar-title">Dota 2 Dashboard</h4>
     <nav>
@@ -38,29 +37,25 @@
     </nav>
     <footer class="sidebar-footer">
       <a href="help.html" class="help">Помощь</a>
-      <small>© 2025 Dota Dashboard</small>
+      <small>2025 Dota Dashboard</small>
     </footer>
   </aside>
-
-  <!-- Основной контент -->
   <main id="main-content">
     <header class="page-header">
       <div class="auth-links">
         <a href="register.html">Регистрация</a>
         <a href="login.html">Вход</a>
         <a href="profile.html">
-          <img src="img/user_icon_149329.svg" alt="Профиль пользователя" class="icon-profile"/>
+          <img src="./img/user_icon_149329.svg" alt="Профиль пользователя" class="icon-profile"/>
         </a>
       </div>
       <div class="title-and-refresh">
         <h2>Анализ героев</h2>
         <a href="heroes_analysis.html" class="reload">
-          <img src="img/icons8-обновление-30.svg" alt="Обновить" />
+          <img src="./img/icons8-обновление-30.svg" alt="Обновить" />
         </a>
       </div>
     </header>
-
-    <!-- Фильтры -->
     <section class="card-section">
       <div class="card-body">
         <form class="filters">
@@ -114,8 +109,6 @@
         </form>
       </div>
     </section>
-
-    <!-- Сравнение героев -->
     <section class="card-section">
       <header class="card-header">
         <h3>Сравнение героев</h3>
@@ -125,22 +118,20 @@
         <div class="compare-heroes">
           <label class="compare-checkbox">
             <input type="checkbox" value="invoker" id="chkInvoker">
-            <img src="img/invoker.png"  alt="Invoker" class="icon-heroes">
+            <img src="./img/invoker.png"  alt="Invoker" class="icon-heroes">
           </label>
           <label class="compare-checkbox">
             <input type="checkbox" value="pudge" id="chkPudge">
-            <img src="img/pudge.png"  alt="Pudge" class="icon-heroes">
+            <img src="./img/pudge.png"  alt="Pudge" class="icon-heroes">
           </label>
           <label class="compare-checkbox">
             <input type="checkbox" value="axe" id="chkAxe">
-            <img src="img/axe.png" alt="Axe" class="icon-heroes">
+            <img src="./img/axe.png" alt="Axe" class="icon-heroes">
           </label>
           <button class="btn btn-outline-info btn-sm">Сравнить</button>
         </div>
       </div>
     </section>
-
-    <!-- Таблица героев -->
     <section class="card-section">
       <header class="card-header">
         <h3>Таблица героев</h3>
@@ -159,7 +150,7 @@
           </thead>
           <tbody>
           <tr>
-            <td><img src="img/invoker.png" class="icon-heroes" alt="Invoker"> Invoker</td>
+            <td><img src="./img/invoker.png" class="icon-heroes" alt="Invoker"> Invoker</td>
             <td class="win">56.2%</td>
             <td>8.7%</td>
             <td>480</td>
@@ -167,7 +158,7 @@
             <td>Mid</td>
           </tr>
           <tr>
-            <td><img src="img/pudge.png" class="icon-heroes" alt="Pudge"> Pudge</td>
+            <td><img src="./img/pudge.png" class="icon-heroes" alt="Pudge"> Pudge</td>
             <td class="lose">48.3%</td>
             <td>12.1%</td>
             <td>280</td>
@@ -175,7 +166,7 @@
             <td>Support</td>
           </tr>
           <tr>
-            <td><img src="img/axe.png" class="icon-heroes" alt="Axe"> Axe</td>
+            <td><img src="./img/axe.png" class="icon-heroes" alt="Axe"> Axe</td>
             <td class="win">53.8%</td>
             <td>5.3%</td>
             <td>380</td>
@@ -183,7 +174,7 @@
             <td>Offlane</td>
           </tr>
           <tr>
-            <td><img src="img/phantom_assasin.png" class="icon-heroes" alt="PA"> PA</td>
+            <td><img src="./img/phantom_assasin.png" class="icon-heroes" alt="PA"> PA</td>
             <td class="win">54.1%</td>
             <td>6.9%</td>
             <td>520</td>
@@ -191,7 +182,7 @@
             <td>Carry</td>
           </tr>
           <tr>
-            <td><img src="img/techies.png" class="icon-heroes techies" alt="Techies"> Techies</td>
+            <td><img src="./img/techies.png" class="icon-heroes techies" alt="Techies"> Techies</td>
             <td class="lose">42.7%</td>
             <td>1.2%</td>
             <td>210</td>
@@ -202,8 +193,6 @@
         </table>
       </div>
     </section>
-
-    <!-- Графики -->
     <div class="charts-grid">
       <section class="card-section">
         <header class="card-header">
@@ -211,7 +200,7 @@
         </header>
         <div class="card-body-placeholder">
           <div class="chart-placeholder"></div>
-          <img src="img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
+          <img src="./img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
           <p>Гистограмма win rate героев по рангам</p>
         </div>
       </section>
@@ -221,13 +210,11 @@
         </header>
         <div class="card-body-placeholder">
           <div class="chart-placeholder"></div>
-          <img src="img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
+          <img src="./img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
           <p>Линейный график популярности героев (мета)</p>
         </div>
       </section>
     </div>
-
-    <!-- Герой недели -->
     <section class="card-section">
       <header class="card-header">
         <h3>Герой недели</h3>
@@ -235,7 +222,7 @@
       <div class="card-body">
         <div class="hero-of-week">
           <h3>
-            <img src="img/invoker.png" class="icon-heroes" alt="Invoker"> Invoker
+            <img src="./img/invoker.png" class="icon-heroes" alt="Invoker"> Invoker
           </h3>
           <p class="lead">Win Rate: <span class="win">+3.2%</span> за неделю</p>
           <p>Популярность: <span class="win">+1.1%</span></p>

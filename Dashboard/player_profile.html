@@ -10,11 +10,10 @@
 <body>
 <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 <div class="container">
-  <!-- Боковая панель навигации -->
-  <label for="menu-toggle" class="burger-btn">☰</label>
+  <label for="menu-toggle" class="burger-btn"><img src="./img/icons8-hamburger-menu.svg" alt="menu"></label>
   <aside id="sidebar">
     <a href="index.html" class="logo-link">
-      <img src="img/logo.svg" alt="Логотип Dota 2 Dashboard" class="logo-icon" />
+      <img src="./img/logo.svg" alt="Логотип Dota 2 Dashboard" class="logo-icon" />
     </a>
     <h4 class="sidebar-title">Dota 2 Dashboard</h4>
     <nav>
@@ -38,34 +37,30 @@
     </nav>
     <footer class="sidebar-footer">
       <a href="help.html" class="help">Помощь</a>
-      <small>© 2025 Dota Dashboard</small>
+      <small>2025 Dota Dashboard</small>
     </footer>
   </aside>
-
-  <!-- Основной контент -->
   <main id="main-content">
     <header class="page-header">
       <div class="auth-links">
         <a href="register.html">Регистрация</a>
         <a href="login.html">Вход</a>
         <a href="profile.html">
-          <img src="img/user_icon_149329.svg" class="icon-profile" alt="Профиль пользователя"/>
+          <img src="./img/user_icon_149329.svg" class="icon-profile" alt="Профиль пользователя"/>
         </a>
       </div>
       <div class="title-and-refresh">
         <h2>Профиль игрока</h2>
         <a href="player_profile.html" class="reload">
-          <img src="img/icons8-обновление-30.svg" alt="Обновить" />
+          <img src="./img/icons8-обновление-30.svg" alt="Обновить" />
         </a>
       </div>
     </header>
-
-    <!-- Информация об игроке -->
     <section class="card-section">
       <div class="card-body">
         <div class="player-info">
           <div class="player-avatar">
-            <img src="img/icons8-dota-2-50.png" alt="Аватар игрока" class="avatar-img">
+            <img src="./img/icons8-dota-2-50.png" alt="Аватар игрока" class="avatar-img">
             <h5 class="player-name">PlayerName</h5>
           </div>
           <div class="player-stats">
@@ -97,8 +92,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Вкладки -->
     <div class="tabs">
       <div class="tab-header">
         <button class="tab-btn active" data-tab="general">Общее</button>
@@ -106,8 +99,6 @@
         <button class="tab-btn" data-tab="roles">Роли</button>
         <button class="tab-btn" data-tab="progress">Прогресс</button>
       </div>
-
-      <!-- Вкладка "Общее" -->
       <div class="tab-content active" id="general">
         <section class="card-section">
           <header class="card-header">
@@ -143,13 +134,11 @@
             <h3>График Win Rate</h3>
           </header>
           <div class="card-body-placeholder">
-            <img src="img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
+            <img src="./img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
             <p>Здесь будет график win rate по неделям</p>
           </div>
         </section>
       </div>
-
-      <!-- Вкладка "Герои" -->
       <div class="tab-content" id="heroes" style="display: none;">
         <section class="card-section">
           <header class="card-header">
@@ -168,21 +157,21 @@
               </thead>
               <tbody>
               <tr>
-                <td><img src="img/invoker.png" class="heroes-img" alt="Invoker"> Invoker</td>
+                <td><img src="./img/invoker.png" class="heroes-img" alt="Invoker"> Invoker</td>
                 <td>27</td>
                 <td>63%</td>
                 <td>480</td>
                 <td>Mid</td>
               </tr>
               <tr>
-                <td><img src="img/pudge.png" class="heroes-img" alt="Pudge"> Pudge</td>
+                <td><img src="./img/pudge.png" class="heroes-img" alt="Pudge"> Pudge</td>
                 <td>18</td>
                 <td>50%</td>
                 <td>280</td>
                 <td>Support</td>
               </tr>
               <tr>
-                <td><img src="img/axe.png" class="heroes-img"  alt="Axe"> Axe</td>
+                <td><img src="./img/axe.png" class="heroes-img"  alt="Axe"> Axe</td>
                 <td>15</td>
                 <td>53%</td>
                 <td>380</td>
@@ -193,8 +182,6 @@
           </div>
         </section>
       </div>
-
-      <!-- Вкладка "Роли" -->
       <div class="tab-content" id="roles" style="display: none;">
         <section class="card-section">
           <header class="card-header">
@@ -225,15 +212,13 @@
                 </li>
               </ul>
               <div class="chart-placeholder-card">
-                <img src="img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
+                <img src="./img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
                 <p class="chart-label">Диаграмма распределения по ролям</p>
               </div>
             </div>
           </div>
         </section>
       </div>
-
-      <!-- Вкладка "Прогресс" -->
       <div class="tab-content" id="progress" style="display: none;">
         <section class="card-section">
           <header class="card-header">
@@ -241,7 +226,7 @@
           </header>
           <div class="card-body">
             <div class="chart-placeholder-card">
-              <img src="img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
+              <img src="./img/strelka-narisovannaa-melom.jpg" class="schedule" alt="график"/>
               <p class="chart-label">График MMR за последние 3 месяца</p>
             </div>
             <div class="progress-bar-container">
@@ -256,22 +241,5 @@
     </div>
   </main>
 </div>
-
-<script>
-  // Переключение вкладок
-  document.querySelectorAll('.tab-btn').forEach(button => {
-    button.addEventListener('click', function() {
-      const tabId = this.getAttribute('data-tab');
-
-      // Сброс активных классов
-      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-      document.querySelectorAll('.tab-content').forEach(content => content.style.display = 'none');
-
-      // Активация выбранной вкладки
-      this.classList.add('active');
-      document.getElementById(tabId).style.display = 'block';
-    });
-  });
-</script>
 </body>
 </html>
