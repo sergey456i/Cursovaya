@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-VariableFont_wght.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1e1e1e;
+    font-family: Rubik, sans-serif;
+}
+p{
+    color: white;
+}
+p:first-child{
+    font-size: 150pt;
+    font-weight: bold;
+    margin: 0;
+    color: #F37E1C;
+}
+p:nth-child(2){
+    font-size: 50pt;
+    margin: 0;
+    color: #C22525;
+}
